@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1e1e2f; /* Dark background for contrast */
+    color: #ffffff;
+}
+
+.calculator {
+    background: #2c2c3e; /* Darker calculator body */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    padding: 20px;
+}
+
+.display {
+    background: #000000; /* Black display for contrast */
+    color: #00ff00; /* Bright green text for readability */
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Prevent text overflow */
+    white-space: nowrap; /* Prevent wrapping */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.button {
+    background: #3a3a4f; /* Neutral button color */
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem; /* Larger font size for better readability */
+    padding: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: #50506e; /* Slightly lighter on hover */
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+.operator {
+    background: #ff9500; /* Bright orange for operators */
+    color: white;
+}
+
+.operator:hover {
+    background: #e08900; /* Darker orange on hover */
+}
+
+.button:active {
+    transform: scale(0.95); /* Pressed effect */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.history {
+    background: #1a1a1a; /* Slightly lighter than the main display */
+    color: #cccccc; /* Dimmed text for history */
+    font-size: 1.2rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden; /* Prevent text overflow */
+    white-space: nowrap; /* Prevent wrapping */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
